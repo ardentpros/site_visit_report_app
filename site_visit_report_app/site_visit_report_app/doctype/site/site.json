@@ -1,0 +1,159 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-12-04 05:38:12.450915",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_tazo",
+  "document_no",
+  "site_id",
+  "site_name",
+  "site_supervisor",
+  "site_location",
+  "site_address",
+  "site_important_note",
+  "column_break_gfjl",
+  "poject_id",
+  "project_name",
+  "project_client",
+  "project_status",
+  "project_priority",
+  "department",
+  "department_head",
+  "project_team",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_tazo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "document_no",
+   "fieldtype": "Data",
+   "label": "Document No"
+  },
+  {
+   "fieldname": "site_id",
+   "fieldtype": "Data",
+   "label": "Site ID"
+  },
+  {
+   "fieldname": "site_name",
+   "fieldtype": "Data",
+   "label": "Site Name"
+  },
+  {
+   "fieldname": "site_supervisor",
+   "fieldtype": "Data",
+   "label": "Site Supervisor",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "site_location",
+   "fieldtype": "Data",
+   "label": "Site Location"
+  },
+  {
+   "fieldname": "site_address",
+   "fieldtype": "Small Text",
+   "label": "Site Address"
+  },
+  {
+   "fieldname": "site_important_note",
+   "fieldtype": "Small Text",
+   "label": "Site Important Note"
+  },
+  {
+   "fieldname": "column_break_gfjl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "poject_id",
+   "fieldtype": "Link",
+   "label": "Project ID",
+   "options": "Project"
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
+  },
+  {
+   "fieldname": "project_client",
+   "fieldtype": "Link",
+   "label": "Project Client",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "project_status",
+   "fieldtype": "Select",
+   "label": "Project Status",
+   "options": "Open\nOngoing\nSuspended\nCompleted\nCancelled\nClosed"
+  },
+  {
+   "fieldname": "project_priority",
+   "fieldtype": "Select",
+   "label": "Project Priority",
+   "options": "Low\nMedium\nHigh"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "default": "Department",
+   "fieldname": "department_head",
+   "fieldtype": "Data",
+   "label": "Department Head"
+  },
+  {
+   "fieldname": "project_team",
+   "fieldtype": "Table",
+   "label": "Project Team",
+   "options": "Project Team"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Site",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-12-04 09:20:22.820428",
+ "modified_by": "Administrator",
+ "module": "Site Visit Report App",
+ "name": "Site",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

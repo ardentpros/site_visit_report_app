@@ -1,0 +1,123 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-12-04 06:45:28.312289",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_rljq",
+  "site_visit_no",
+  "column_break_cklw",
+  "site_visit_report_date",
+  "column_break_llfr",
+  "site_visit_report__time",
+  "section_break_oxpq",
+  "projact_statuswork_progress",
+  "enter_any_matter_arising_or_issues_observed_section",
+  "matters_arising_issue_observed",
+  "detailsinformation_rfi_section",
+  "rfdetailsinformation",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_rljq",
+   "fieldtype": "Section Break",
+   "label": "SVR No, Date & Time"
+  },
+  {
+   "fieldname": "site_visit_no",
+   "fieldtype": "Data",
+   "label": "Site Visit Report No",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_cklw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "site_visit_report_date",
+   "fieldtype": "Date",
+   "label": "Site Visit Report Date"
+  },
+  {
+   "fieldname": "column_break_llfr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "site_visit_report__time",
+   "fieldtype": "Time",
+   "label": "Site Visit Report  Time"
+  },
+  {
+   "fieldname": "section_break_oxpq",
+   "fieldtype": "Section Break",
+   "label": "Enter Project Status or Work Progress"
+  },
+  {
+   "fieldname": "projact_statuswork_progress",
+   "fieldtype": "Table",
+   "label": "Project Status/Work Progress ",
+   "options": "SVR PSWP"
+  },
+  {
+   "fieldname": "enter_any_matter_arising_or_issues_observed_section",
+   "fieldtype": "Section Break",
+   "label": "Enter any Matter Arising or Issues Observed"
+  },
+  {
+   "fieldname": "matters_arising_issue_observed",
+   "fieldtype": "Table",
+   "label": "Matters Arising/Issue Observed",
+   "options": "SVR MAIO"
+  },
+  {
+   "fieldname": "detailsinformation_rfi_section",
+   "fieldtype": "Section Break",
+   "label": "Enter Details/Information (RFI)"
+  },
+  {
+   "fieldname": "rfdetailsinformation",
+   "fieldtype": "Table",
+   "label": "Details/Information (RFI)",
+   "options": "SVR DIRFI"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SVR",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-12-04 09:34:32.852435",
+ "modified_by": "Administrator",
+ "module": "Site Visit Report App",
+ "name": "SVR",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
